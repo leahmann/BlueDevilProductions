@@ -1,184 +1,609 @@
-/* MOBILE STYLES: PORTRAIT */
-@media only screen and (max-width: 479px){
-	header{
-		width:100%;
-		height:50px;
-		background-color:#000000;
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 0px 5px 5px rgba(0,0,0,0.5);
-		position:fixed;
-	}
-	
-	h1{
-		font-size:22px;
-		letter-spacing:-.5px;
-		color:#ffffff;
-		height:100%;
-		line-height:50px;
-		margin-left:1.3%;
-	}
-	
-	#content{
-		float:left;
-		margin-top:50px;
-		width:100%;
-	}
-	
-	p{
-		font-size:16px;
-		line-height:24px;
-		width:97.4%;
-		margin-left:1.3%;
-		margin-bottom:20px;
-		color:#000000;
-	}
+
+@font-face {
+	font-family: "Bistro Script";
+	src:url(../fonts/BistroScript.otf) format("opentype");
 }
 
-/* MOBILE STYLES: LANDSCAPE */
-@media only screen and (min-width: 480px) and (max-width: 767px){
-	header{
-		width:100%;
-		height:50px;
-		background-color:#000000;
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 0px 5px 5px rgba(0,0,0,0.5);
-		position:fixed;
-	}
-	
-	h1{
-		font-size:22px;
-		letter-spacing:-.5px;
-		color:#ff0000;
-		height:100%;
-		line-height:50px;
-		margin-left:1.3%;
-	}
-	
-	#content{
-		float:left;
-		margin-top:50px;
-		width:100%;
-	}
-	
-	p{
-		font-size:16px;
-		line-height:24px;
-		width:97.4%;
-		margin-left:1.3%;
-		margin-bottom:20px;
-		color:#000000;
-	}
+@font-face {
+	font-family: "Geometry Soft";
+	src:url(../fonts/Geometry_Soft_Pro-Bold_N.otf) format("opentype");
 }
 
-/* TABLET STYLES: PORTRAIT */
-@media only screen and (min-width: 768px) and (max-width: 959px){
-	header{
-		width:100%;
-		height:50px;
-		background-color:#000000;
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 0px 5px 5px rgba(0,0,0,0.5);
-		position:fixed;
-	}
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px){
 	
-	h1{
-		font-size:22px;
-		letter-spacing:-.5px;
-		color:#ffffff;
-		height:100%;
-		line-height:50px;
-		margin-left:1.3%;
-	}
-	
-	#content{
-		float:left;
-		margin-top:50px;
-		width:100%;
-	}
-	
-	p{
-		font-size:16px;
-		line-height:24px;
-		width:97.4%;
-		margin-left:1.3%;
-		margin-bottom:20px;
-		color:#000000;
-	}
 }
 
-/* TABLET STYLES: LANDSCAPE */
-@media only screen and (min-width: 960px) and (max-width: 1024px){
-	header{
-		width:100%;
-		height:50px;
-		background-color:#000000;
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 0px 5px 5px rgba(0,0,0,0.5);
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) and (max-width: 977px){
+	
+	#bannerContainer{
 		position:fixed;
+		width:100%;
+		height:70px;
+		background-color:#1C2855;
+		z-index:1;
+	}
+	
+	#banner{
+		width:97.7%;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	
+	#smallFlameLogo{
+		height:70px;
+		width:70px;
+		background:url(../images/1intro/logoSmall.png) no-repeat;
+		float:left;
 	}
 	
 	h1{
-		font-size:22px;
-		letter-spacing:-.5px;
-		color:#ff0000;
-		height:100%;
-		line-height:50px;
-		margin-left:1.3%;
-	}
-	
-	#content{
+		font-family:"Bistro Script";
+		color:#FFF;
+		font-size:55px;
+		line-height:55px;
+		width:50%;
 		float:left;
-		margin-top:50px;
-		width:100%;
 	}
 	
-	p{
-		font-size:16px;
-		line-height:24px;
-		width:97.4%;
-		margin-left:1.3%;
-		margin-bottom:20px;
-		color:#000000;
+	h2{
+		font-family:"Bistro Script";
+		color:#FFF;
+		font-size:35px;
+		line-height:75px;
+		width:35%;
+		float:right;
+		text-align:right;
 	}
+	
+	#intro{
+		background-color:#1E7FC3;
+		height:900px;
+	}
+	
+	#flameLogo{
+		background: url(../images/1intro/logoTest.png) no-repeat;
+			background-position:center;
+	}
+	
+	#gradient{
+		background:fixed url(../images/1intro/gradientTest.png) no-repeat;
+			background-position:center;
+		height:900px;
+	}
+	
+	#music{
+		
+		background:fixed url(../images/2music/gradient.png) no-repeat;
+			background-position:center;
+		background-color:#223C68;
+		height:700px;
+	}
+	
+	#stage{
+		background: url(../images/2music/stageTest.png) no-repeat;
+			background-position:center;
+			height:800px;
+	}
+	
+	#lights{
+		background: url(../images/2music/lightsTest.png) no-repeat;
+			background-position:center;
+			height:200px;
+	}
+	
+	#comedy{
+		background-color:#FF0033;
+		height:500px;
+	}
+	
+	#films{
+		background-color:#339933;
+		height:500px;
+	}
+	
+	#contact{
+		background-color:#3CF;
+		height:500px;
+	}
+	
 }
 
 /* DESKTOP STYLES */
-@media only screen and (min-width: 1025px){
-	header{
-		width:100%;
-		height:50px;
-		background-color:#000000;
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 0px 5px 5px rgba(0,0,0,0.5);
+@media only screen and (min-width: 978px){
+	
+	#container{
+		width:1024px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	
+	#bannerContainer{
 		position:fixed;
+		width:1024px;
+		height:70px;
+		background-color:#1C2855;
+		z-index:1;
+	}
+	
+	#banner{
+		margin-right:100px;
+		margin-left:50px;
+	}
+	
+	#smallFlameLogo{
+		height:70px;
+		width:70px;
+		background:url(../images/1intro/logoSmall.png) no-repeat;
+		float:left;
 	}
 	
 	h1{
-		font-size:22px;
-		letter-spacing:-.5px;
-		color:#ffff00;
-		height:100%;
-		line-height:50px;
-		margin-left:1.3%;
+		font-family:"Bistro Script";
+		color:#FFF;
+		font-size:55px;
+		line-height:55px;
+		float:left;
 	}
 	
-	#content{
-		float:left;
-		margin-top:50px;
-		width:100%;
+	h2{
+		
+		font-family:"Bistro Script";
+		color:#FFF;
+		font-size:35px;
+		line-height:75px;
+		float:right;
+		text-align:right;
+	}
+	
+	/*******************INTRO*********************/
+	
+	#intro{
+		background-color:#1E7FC3;
+		height:768px;
+	}
+	
+	#flameLogo{
+		background: url(../images/1intro/flameLogo.png) no-repeat;
+			background-position:center;
+	}
+	
+	#gradient{
+		background:fixed url(../images/1intro/gradient.png) no-repeat;
+			background-position:center;
+		height:900px;
+	}
+	
+	/*******************MUSIC*********************/
+	
+	#music{
+		position:relative;
+		background:fixed url(../images/2music/gradient.png) no-repeat;
+			background-position:center;
+		background-color:#223C68;
+		height:625px;
+	}
+	
+	#musicStage{
+		position:absolute;
+		background: url(../images/2music/stage.png) no-repeat;
+			background-position:center;
+		height:768px;
+		width:1024px;
+		top:0px;
+	}
+	
+	#musicLights{
+		position:absolute;
+		background: url(../images/2music/lights.png) no-repeat;
+			background-position:center;
+		height:200px;
+		width:1024px;
+	}
+	
+	#monster1{
+		position:absolute;
+		background: url(../images/2music/monster1.png) no-repeat;
+			background-position:center;
+		height:400px;
+		width:1024px;
+		top:140px;
+	}
+	
+	#monster2{
+		position:absolute;
+		background: url(../images/2music/monster2.png) no-repeat;
+			background-position:center;
+		height:420px;
+		width:1024px;
+		top:175px;
+	}
+	
+	#monster3{
+		position:absolute;
+		background: url(../images/2music/monster3.png) no-repeat;	
+		height:400px;
+		width:1024px;
+		top:165px;
+	}
+	
+	#spotlight1{
+		position:absolute;
+		background: url(../images/2music/spotlight1.png) no-repeat;	
+		height:336px;
+		width:350px;
+		top:165px;
+		left:40px;
+	}
+	
+	#spotlight2{
+		position:absolute;
+		background: url(../images/2music/spotlight2.png) no-repeat;	
+		height:336px;
+		width:350px;
+		top:200px;
+		left:300px;
+	}
+	
+	#spotlight3{
+		position:absolute;
+		background: url(../images/2music/spotlight3.png) no-repeat;	
+		height:336px;
+		width:350px;
+		top:170px;
+		left:600px;
+	}
+	
+	#mics{
+		position:absolute;
+		background: url(../images/2music/mics.png) no-repeat;
+		height:325px;
+		width:1024px;
+		top:290px;
+	}
+	
+	#musicAudience1{
+		position:absolute;
+		background: url(../images/2music/audience1.png) no-repeat;
+		height:450px;
+		width:1024px;
+		top:300px;
+	}
+	
+	#musicAudience2{
+		position:absolute;
+		background: url(../images/2music/audience2.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:350px;
+	}
+	
+	/*******************COMEDY*********************/
+	
+	#comedy{
+		position:relative;
+		background-color:#521222;
+		height:650px;
+	}
+	
+	#path{
+		position:absolute;
+		background: url(../images/3comedy/path.png) no-repeat;
+		height:700px;
+		width:1024px;
+		top:180px;
+	}
+	
+	#audience1{
+		position:absolute;
+		background: url(../images/3comedy/audience1.png) no-repeat;
+		height:700px;
+		width:1024px;
+		top:150px;
+	}
+	
+	#audience2{
+		position:absolute;
+		background: url(../images/3comedy/audience2.png) no-repeat;
+		height:400px;
+		width:1024px;
+		top:100px;
+	}
+	
+	#audience3{
+		position:absolute;
+		background: url(../images/3comedy/audience3.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:120px;
+	}
+	
+	#tressel{
+		position:absolute;
+		background: url(../images/3comedy/tressel.png) no-repeat;
+			background-position:center;
+		height:200px;
+		width:1024px;
+	}
+	
+	#comedyLights{
+		position:absolute;
+		background: url(../images/3comedy/lights1.png) no-repeat;
+		height:150px;
+		width:1024px;
+		top:20px;
+	}
+	
+	#comedyStage{
+		position:absolute;
+		background: url(../images/3comedy/stage.png) no-repeat;
+		height:700px;
+		width:1024px;
+	}
+	
+	#stool{
+		position:absolute;
+		background: url(../images/3comedy/stool.png) no-repeat;
+		height:800px;
+		width:1024px;
+		top:340px;
+	}
+	
+	#monster4{
+		position:absolute;
+		background: url(../images/3comedy/monster4.png) no-repeat;
+		height:550px;
+		width:157px;
+		left:300px;
+		top:100px;
+	}
+	
+	/*******************FILMS*********************/
+	
+	#films{
+		background:fixed url(../images/4films/gradient.png) no-repeat;
+			background-position:center;
+		position:relative;
+		background-color:#1B5128;
+		height:700px;
+	}
+	
+	#doors{
+		position:absolute;
+		background: url(../images/4films/doors.png) no-repeat;
+			background-position:center;
+		height:600px;
+		width:1024px;
+		top:325px;
+	}
+	
+	#screen{
+		position:absolute;
+		background: url(../images/4films/screen.png) no-repeat;
+			background-position:center;
+		height:500px;
+		width:1024px;
+		top:100px;
+	}
+	
+	#monster5{
+		position:absolute;
+		background: url(../images/4films/monster5.png) no-repeat;
+		height:300px;
+		width:120px;
+		left:200px;
+		top:300px;
+	}
+	
+	#row1{
+		position:absolute;
+		background: url(../images/4films/row1.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:295px;
+	}
+	
+	#row2{
+		position:absolute;
+		background: url(../images/4films/row2.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:285px;
+	}
+	
+	#row3{
+		position:absolute;
+		background: url(../images/4films/row3.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:280px;
+	}
+	
+	#row4{
+		position:absolute;
+		background: url(../images/4films/row4.png) no-repeat;
+		height:500px;
+		width:1024px;
+		top:280px;
+	}
+	
+	/*******************CONTACT*********************/
+	
+	#contact{
+		position:relative;
+		background-color:#1E7FC3;
+		height:768px;
+	}
+	
+	#flameLogo2{
+		position:absolute;
+		background: url(../images/5contact/flameLogo2.png) no-repeat;
+			background-position:center;
+		height:768px;
+		width:1024px;
+	}
+	
+	#gradient2{
+		position:absolute;
+		background:fixed url(../images/5contact/gradient2.png) no-repeat;
+			background-position:center;
+		height:768px;
+		width:1024px;
+	}
+	
+	#monster6{
+		position:absolute;
+		background: url(../images/5contact/monster6.png) no-repeat;
+		height:300px;
+		width:150px;
+		left:100px;
+		top:450px;
+	}
+	
+	a{
+		position:absolute;
+		text-decoration:none;
+		color:#FFFFFF;
+		font-size:36px;
+		font-family:"Geometry Soft";
+		right:30px;
 	}
 	
 	p{
-		font-size:16px;
-		line-height:24px;
-		width:97.4%;
-		margin-left:1.3%;
-		margin-bottom:20px;
-		color:#000000;
+		position:absolute;
+		color:#FFFFFF;
+		font-size:36px;
+		font-family:"Geometry Soft";
+		right:30px;
+		
 	}
+	
+	#join{
+		top:150px;
+	}
+	
+	#website{
+		top:600px;
+	}
+	
+	#phoneNumber{
+		top:650px;
+	}
+	
+	#formContainer{
+		position:absolute;
+		color:#FFFFFF;
+		height:200px;
+		width:510px;
+		top:240px;
+		right:30px;
+	}
+	
+	#facebook{
+		position:absolute;
+		background: url(../images/5contact/facebook.png) no-repeat;
+		height:80px;
+		width:80px;
+		left:485px;
+		top:450px;
+		cursor:pointer;
+	}
+	
+	#twitter{
+		position:absolute;
+		background: url(../images/5contact/twitter.png) no-repeat;
+		height:80px;
+		width:116px;
+		left:585px;
+		top:450px;
+		cursor:pointer;
+	}
+	
+	#youtube{
+		position:absolute;
+		background: url(../images/5contact/youtube.png) no-repeat;
+		height:80px;
+		width:67px;
+		left:726px;
+		top:450px;
+		cursor:pointer;
+	}
+	
+	#flickr{
+		position:absolute;
+		background: url(../images/5contact/flickr.png) no-repeat;
+		height:80px;
+		width:179px;
+		left:823px;
+		top:450px;
+		cursor:pointer;
+	}
+	
+	/*******************FORM*********************/
+	
+	form{
+		background-color:none;
+	}
+	
+	form ul{
+		height:200px;
+	}
+	
+	form .field{
+		margin-bottom:25px;
+	}
+	
+	form span{
+	color:#000000;
+	}
+	
+	form .text{
+		width:500px;
+		font-family: 'Helvetica';
+		font-size:16px;
+		border-style:none;
+		height:30px;
+		padding-left:10px;
+	}
+	
+	form #required{
+		font-family:'Helvetica';
+		float:left;
+		font-size:16px;
+		color:#000000;
+		margin-left:20px;
+		margin-top:5px;
+	}
+	
+	form #required span{
+		color:#cccccc;
+	}
+	
+	form .buttons{
+		float:right;
+	}
+	
+	form .hide{
+		visibility:hidden;
+	}
+	
+	#saveForm{
+		width:70px;
+		height:30px;
+		/*background-image:url(../images/submitButton.jpg);*/
+		border-style:none;
+		color:#FFFFFF;
+		font-family: 'Helvetica';
+		font-size:14px;
+		text-transform:uppercase;
+		background-color:#036;
+		cursor:pointer;
+	}
+	
+	/*#saveForm:hover{
+		background-position:left -30px;
+		color:#000000;
+	}*/
+		
 }

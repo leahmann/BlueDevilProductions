@@ -5,37 +5,205 @@
     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width" / >
-        <title>Width Test 2</title>
+        <title>Blue Devil Productions | App</title>
         
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+        <!--<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>-->
         <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
-        <!--<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>-->
+        <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
         
         <script type="text/javascript">
-			$(document).ready(function() {
-				
-				javascript:alert(document.body.offsetWidth);
-				
-			});	
-		</script>
+        $(document).ready(function(){
+			
+			$('#flameLogo').parallax("50%", 0.1);
+            $('#gradient').parallax("50%", 0.4);
+			
+			$('#music').parallax("50%", .8);
+        	$('#musicLights').parallax("50%", 0.25);
+			$('#musicStage').parallax("50%", 0.1);
+			$('#monster1').parallax("13%", 0.05);
+			$('#monster2').parallax("100%", 0.02);
+			$('#monster3').parallax("78%", 0.05);
+			$('#musicAudience1').parallax("50%", 0.5);
+			$('#musicAudience2').parallax("50%", 0.8);
+			
+			$('#tressel').parallax("50%", 0.2);
+			$('#comedyLights').parallax("50%", 0.05);
+			$('#comedyStage').parallax("50%", 0.6);
+			$('#audience1').parallax("50%", 0.02);
+			$('#audience2').parallax("50%", 0.1);
+			$('#audience3').parallax("50%", 0.2);
+			$('#monster4').parallax("50%", 1);
+			
+			$('#doors').parallax("50%", 0.02);
+			$('#screen').parallax("50%", 0.3);
+			$('#monster5').parallax("20%", 0.01);
+			$('#row1').parallax("50%", 0.4);
+			$('#row2').parallax("50%", 0.6);
+			$('#row3').parallax("50%", 0.8);
+			$('#row4').parallax("50%", 0.9);
+			
+			$('#monster6').parallax("30%", 0.07);
+			$('#flameLogo2').parallax("50%", 0.1);
+            $('#gradient2').parallax("50%", 0.4);
+			
+            <!--$('#box1').parallax("0px", 0.4);
+            <!--$('#films').parallax("0%", 0.1);
+			<!--$('#box2').parallax("0px", -0.4);
+			
+		})
+        </script>
     
     </head>
 
     <body>
     
-        <header>
-        	 <h1>No Initial Scale</h1>
-        </header>
+    	<div id="container">
+    
+            <div id="bannerContainer">
+                <nav id="banner">
+                    <div id="smallFlameLogo"></div>
+                    <h1>Blue Devil Productions</h1>
+                    <h2>Music - Comedy - Films</h2>
+                </nav>
+            </div>
         
-        <section id="content">
-        	<br />
-        	<p><a href="javascript:alert(document.body.offsetWidth);">Test again!</a></p>
-
-        </section>
-
+            <section id="intro">
+                <div id="flameLogo">
+                    <div id="gradient">
+                    </div>
+                </div>  
+            </section>
+            
+            <section id="music">
+                <div id="musicStage">
+                </div>
+                <div id="musicLights">
+                </div>
+                <div id="monster1">
+                </div>
+                <div id="monster2">
+                </div>
+                <div id="monster3">
+                </div>
+                <div id="spotlight1">
+                </div>
+                <div id="spotlight2">
+                </div>
+                <div id="spotlight3">
+                </div>
+                <div id="mics">
+                </div>
+                <div id="musicAudience1">
+                </div>
+                <div id="musicAudience2">
+                </div>
+            </section>
+            
+            <section id="comedy">
+            	<div id="audience1">
+                </div>
+                <div id="path">
+                </div>
+                <div id="audience2">
+                </div>
+                <div id="audience3">
+                </div>
+                <div id="comedyStage">
+                </div>
+                <div id="tressel">
+                </div>
+                <div id="comedyLights">
+                </div>
+                <div id="stool">
+                </div>
+                <div id="monster4">
+                </div>
+            </section>
+            
+            <section id="films">
+            	<div id="doors">
+                </div>
+                <div id="screen">
+                </div>
+                <div id="monster5">
+                </div>
+                <div id="row1">
+                </div>
+                <div id="row2">
+                </div>
+                <div id="row3">
+                </div>
+                <div id="row4">
+                </div>
+            </section>
+            
+            <section id="contact">
+            	
+            	<div id="flameLogo2">
+                </div>
+                <div id="gradient2">
+                </div>
+            	<div id="monster6">
+                </div>
+                <p id="join">Continue the fun, join our mailing list!</p>
+                
+                <div id="formContainer">
+                    <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://bdpstout.wufoo.com/forms/z7x3p3/#public">
+                        <header id="header" class="info">
+                        <!--<h2>BDP App Form</h2>
+                        <div></div>-->
+                        </header>    
+                        <ul>
+                            <li id="foli10" class="notranslate      ">
+                                <label class="desc" id="title10" for="Field10">
+                                    <!--<span id="req_10" class="req">*</span>-->
+                                </label>
+                                <div>
+                                    <input id="Field10" name="Field10" type="text" class="field text medium" value="NAME*" maxlength="255" tabindex="1" onkeyup="" required />
+                                </div>
+                            </li>
+                            <li id="foli3" class="notranslate      ">
+                                <label class="desc" id="title3" for="Field3">
+                                    <!--<span id="req_3" class="req">*</span>-->
+                                </label>
+                                <div>
+                                    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="EMAIL*" maxlength="255" tabindex="2" required /> 
+                                </div>
+                            </li>
+                            <li id="required">*required</li>
+                            <li class="buttons ">
+                                <div>
+                                    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" />
+                                </div>
+                            </li>
+                            <li class="hide">
+                                <label for="comment">Do Not Fill This Out</label>
+                                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                                <input type="hidden" id="idstamp" name="idstamp" value="kPDS6VZUKss9rT/BKWClbMK5jqgDYa7YiMPJtXmVx+U=" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                
+                <div id="facebook" onclick="location.href='https://www.facebook.com/bluedevilproductions';">
+                </div>
+                <div id="twitter" onclick="location.href='https://twitter.com/bdpstout';">
+                </div>
+                <div id="youtube" onclick="location.href='http://www.youtube.com/user/bdpstout?feature=watch';">
+                </div>
+                <div id="flickr" onclick="location.href='http://www.flickr.com/photos/uwstout_bdp/';">
+                </div>
+                <a id="website" href="http://bdp.uwstout.edu/">bdp.uwstout.edu</a>
+                <p id="phoneNumber">715-232-2432</p>
+            </section>
+            
+        </div>
+        
     </body>
 
 </html>
